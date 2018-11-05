@@ -60,7 +60,55 @@ if age > 99:
 else:
     print("小于99")
 
+# 高级特性
+"""
+切片操作符 取list或者tuple部分元素 取L中索引为0,1,2的三个元素
+    L=['A','B','C','D','E']  -> L[0：3]=['A','B','C']
+    
+迭代 for....in
+"""
 
+# Http
 
+"""
+https://www.jianshu.com/search?q=96%87&page=1&type=note
+ url组成
+    scheme: 访问协议 http/https/ftp等
+    host: 域名 www.baidu.com
+    prot：端口号 浏览器默认使用80端口
+    path: 查找路径 search
+    query-string: 查询字符串 q=96%87&page=1&type=note
+    anchor: 锚点 前端页面用来进行定位
+浏览器会对url进行编码，除了英文字母，数字和部分符号外，其他全部使用%+十六进制码值进行编码
 
+请求头常见参数
+    User_Agent：标记请求来源(浏览器的种类/版本，手机型号等)
+    Referer：表示当前这个请求是从哪个url过来的
+    Cookie：服务器用cookie来标示两个请求是否来自同一个人
+"""
+
+# ProxyHandler处理器(代理设置) demo01.py
+"""
+http://httpbin.org 方便查看http请求的一些参数
+ip代理步骤
+    1.调用request.ProxyHandler创建ProxyHandler
+    2.调用request.build_opener创建opener
+    3.调用opener.open 发送请求
+    
+    handler = request.ProxyHandler({"http": "115.46.66.241:8123"})
+    opener = request.build_opener(handler)
+    res = opener.open(url)
+print(res.read())
+常见的代理 
+    西刺代理 www.xicidaili.com
+    快代理 www.kuaidaili.com
+    代理云 www.dailiyun.com
+"""
+
+# Cookie
+# requests库
+"""
+    直接导入requests库   import requests
+
+"""
 
