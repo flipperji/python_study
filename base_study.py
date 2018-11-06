@@ -113,5 +113,21 @@ print(res.read())
 """
 
 # 正则学习
-
+# scrapy学习
+"""
+    安装
+        win 先安装pypwin32
+        安装 pip install scrapy
+        win下如果报错 "https://www.cnblogs.com/BlueSkyyj/p/7663607.html" 参考这个方案
+    创建项目和爬虫
+        1.创建项目：命令行进入项目文件夹 scrapy startproject xx项目名称
+        2.创建爬虫：命令行进入创建好的项目文件夹 scrapy genspider xx爬虫名称 "爬虫域名"
+    项目目录结构
+        1.items.py 存放爬虫怕取下来的数据模型
+        2.middleware.py 存放中间件的文件
+        3.pipelines.py  用来将items中的模型存储到本地磁盘中
+        4.settings.py   爬虫的配置信息(请求头，请求频率，ip代理池)
+        5.scrapy.cfg    项目配置的文件
+        6.spider包   所有的爬虫都放置在里面
+"""
 
