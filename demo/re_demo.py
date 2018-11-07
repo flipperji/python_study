@@ -44,3 +44,13 @@ print(re_email.group())
 url = "http://www.baidu.com"
 re_url = re.match('(http|https|ftp)://[^\s]+',url)
 print(re_url.group())
+
+"""
+^(脱字号)  在[]表示取反，其他表示开始位置
+$   表示以...结尾
+|   匹配多个字符
+"""
+
+tt = '1241412'
+re_tt = re.match('\d', tt)
+print(re_tt.group())

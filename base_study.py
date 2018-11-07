@@ -129,5 +129,12 @@ print(res.read())
         4.settings.py   爬虫的配置信息(请求头，请求频率，ip代理池)
         5.scrapy.cfg    项目配置的文件
         6.spider包   所有的爬虫都放置在里面
+        
+        
+    CrawlSpider 
+    ScrapyShell
+    模拟登录人人网
+        如果发送post请求，推荐使用scrapy.FormRequest(url, formdata=data, callback=self.parse_page)
+        如果想在爬虫一开始就发送post请求，需要重写start_requests方法
 """
 

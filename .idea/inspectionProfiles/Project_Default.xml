@@ -9,5 +9,12 @@
         </list>
       </option>
     </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="scrapy_demo.autohome_image.autohome_image.spiders.autohome.autohome_image" />
+        </list>
+      </option>
+    </inspection_tool>
   </profile>
 </component>
